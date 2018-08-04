@@ -198,7 +198,7 @@
             // Other callbacks:
 
             // Callback for the submit event of each file upload:
-            // submit: function (e, data) {}, // .bind('fileuploadsubmit', func);
+            submit: function (e, data) { console.log(e); console.log(data);}, // .bind('fileuploadsubmit', func);
 
             // Callback for the start of each file upload request:
             // send: function (e, data) {}, // .bind('fileuploadsend', func);

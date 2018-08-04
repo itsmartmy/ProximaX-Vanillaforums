@@ -37,7 +37,11 @@ $editorkey = $this->data('_editorkey');
          <?php echo $filePreviewCss; ?>
          <div class="file-data">
             <a class="filename" data-type="<?php echo htmlspecialchars($attachment['Type']); ?>"
-               href="<?php echo $pathParse['Url'] ?>"
+               href="#" onclick="checkDownload('<?php
+               $link = $pathParse['Url'];
+               $link_array = explode('/',$link);
+               echo end($link_array);
+              ?>');return false;"
                target="_blank"
                 <?php
                 if ($attachment['ImageHeight']) {
